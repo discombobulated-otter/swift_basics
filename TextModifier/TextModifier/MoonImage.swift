@@ -14,7 +14,19 @@ struct MoonImage: View {
             .resizable()
             .scaledToFit()
             .frame(width: 150)
-            .clipShape(Circle())
+            .clipShape(UnevenRoundedRectangle(
+                                                topLeadingRadius: 50.0,
+                                              bottomLeadingRadius: 0.0,
+                                              bottomTrailingRadius: 30.0,
+                                   
+                                                topTrailingRadius: 0.0))
+//            .border(.blue, width: 5)
+            .overlay(UnevenRoundedRectangle(
+                topLeadingRadius: 50.0,
+              bottomLeadingRadius: 0.0,
+              bottomTrailingRadius: 30.0,
+   
+                topTrailingRadius: 0.0).stroke(.yellow,lineWidth: 6))
         
     }
 }
