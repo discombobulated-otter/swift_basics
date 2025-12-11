@@ -26,7 +26,7 @@ struct MoonImage: View {
               bottomLeadingRadius: 0.0,
               bottomTrailingRadius: 30.0,
    
-                topTrailingRadius: 0.0).stroke(.yellow,lineWidth: 6))
+                topTrailingRadius: 0.0).stroke(.yellow,lineWidth: 9).strokeBorder(.red))
         
     }
 }
